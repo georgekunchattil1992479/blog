@@ -12,7 +12,7 @@
     <title>SB Admin - Blank Page</title>
 
     <!-- Bootstrap core CSS-->
-    {{ Html::style('css/bootstrap.min.css') }}
+    {{ Html::style('bootstrap/css/bootstrap.min.css') }}
 
     <!-- Custom fonts for this template-->
     {{ Html::style('fontawesome-free/css/all.min.css') }}
@@ -128,8 +128,9 @@
 
       <div id="content-wrapper">
 
-        <div class="container-fluid">
-            @yield('content')
+        <div class="container-fluid">  
+          
+           @yield('content') -->
 
         </div>
         <!-- /.container-fluid -->
@@ -174,14 +175,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    {{ Html::style('jquery/jquery.min.js') }}
-    {{ Html::style('bootstrap/js/bootstrap.bundle.min.js') }}
+    {{ Html::script('jquery/jquery.min.js') }}
+    {{ Html::script('bootstrap/js/bootstrap.bundle.min.js') }}
 
     <!-- Core plugin JavaScript-->
-    {{ Html::style('jquery-easing/jquery.easing.min.js') }}
+    {{ Html::script('jquery-easing/jquery.easing.min.js') }}
 
     <!-- Custom scripts for all pages-->
-    {{ Html::style('js/sb-admin.min.js') }}
+    {{ Html::script('js/sb-admin.min.js') }}
 
   </body>
 
