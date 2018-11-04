@@ -1,23 +1,29 @@
 @extends('admin.main')
 
 @section('content')
-     <!-- Breadcrumbs-->
-     <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Blank Page</li>
-     </ol>
+    <div class="row">
+        <div class="col-lg-12">
+             <!-- Page Content -->
+            <h1 class="page-header">
+                 Category Control
+                <small>Sub Heading</small>
+            </h1>
 
-     <nav class="navbar navbar-inverse">
-           <ul class="nav navbar-nav">
-                <li><a href="">View All Category</a></li>
-                <li><a href="">Create New Category</a></li>
-           </ul>
-     </nav>
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Blank Page</li>
+            </ol>
 
-    <!-- Page Content -->
-      <h1>Category Control</h1>
-      <hr>
-      <p>This is a great starting point for new custom pages.</p>
+            <nav class="navbar navbar-inverse">
+                <ul class="nav navbar-nav">
+                    <li><a href="">View All Category</a></li>
+                    <li><a href="">Create New Category</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </div>
+
 @endsection
