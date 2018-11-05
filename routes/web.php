@@ -26,7 +26,7 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function(){
+Route::group(['middleware' => ['web']], function(){   //The CategoryController works in the following manner. category->controller->index->category->index.blade.php
 
     Route::resource('category', 'CategoryController');
 });
