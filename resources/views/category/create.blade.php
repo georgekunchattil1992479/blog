@@ -5,7 +5,7 @@
         <div class="col-lg-12">
              <!-- Page Content -->
             <h1 class="page-header">
-                 Category Control
+                 Create New Category
                 <small>Sub Heading</small>
             </h1>
 
@@ -23,6 +23,18 @@
                     <li><a href="category/create">Create New Category</a></li>
                  </ul>
             </nav>
+
+            <div class="panel-body">
+
+                  {!! Form::open(array('url'=>'category'))!!}
+
+                  {!! Form::label('name', 'Name:') !!}
+                  {!! Form::text('name', null, array('class'=>'form-control')) !!}
+
+                  {!! Form::submit('Create Category', array('class'=>'secondary-cart-btn')) !!}
+                  {!! Form::close() !!}
+
+            </div>
         </div>
     </div>
 @endsection
